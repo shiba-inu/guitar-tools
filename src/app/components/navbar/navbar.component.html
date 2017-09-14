@@ -1,0 +1,22 @@
+<nav class="nav has-shadow" id="top">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item" routerLink="/home" >
+        Guitar Tools
+      </a>
+    </div>
+    <span class="nav-toggle" (click)="toggle()" #burger>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu" #menu>
+      <a class="nav-item is-tab" routerLink="/triads" routerLinkActive="is-active">
+        Triads
+      </a>
+      <a class="nav-item is-tab" routerLink="/chords" routerLinkActive="is-active">
+        Chords
+      </a>
+    </div>
+  </div>
+</nav>
